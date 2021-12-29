@@ -15,7 +15,7 @@ class MyPagerAdapter(fa: FragmentActivity) : FragmentStateAdapter(fa) {
                 MyFragment.newInstance("CONTACT", "")
             }
             1 -> {
-                MyFragment.newInstance("GALLERY", "")
+                GalleryFragment()
             }
             else -> {
                 MyFragment.newInstance("Page3", "")

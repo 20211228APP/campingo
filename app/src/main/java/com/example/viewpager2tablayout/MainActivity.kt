@@ -1,5 +1,7 @@
 package com.example.viewpager2tablayout
 
+
+import android.media.Image
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentActivity
@@ -35,5 +37,7 @@ class MainActivity : AppCompatActivity() {
         }.attach()
     }
     //setSupportActionBAR(binding.toolbar)
+
+
 }
 
