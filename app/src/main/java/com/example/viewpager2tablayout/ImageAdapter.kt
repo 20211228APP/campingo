@@ -30,7 +30,6 @@ class ImageAdapter() : RecyclerView.Adapter<ImageAdapter.ViewHolder>() {
 
         fun bind(item: ImageData) {
             Glide.with(itemView).load(item.img).into(imgProfile)
-
         }
     }
 

@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.viewpager2tablayout.databinding.FragmentGalleryBinding
@@ -50,13 +51,35 @@ class GalleryFragment : Fragment() {
     private fun initRecycler() {
         imageAdapter = ImageAdapter()
         binding.rvGallery.adapter = imageAdapter
-        binding.rvGallery.layoutManager = LinearLayoutManager(this.context, LinearLayoutManager.VERTICAL, false)
+        binding.rvGallery.layoutManager = GridLayoutManager(this.context, 3)
 
         datas.apply {
             add(ImageData(img = R.drawable.ic_baseline_contact_phone_24))
             add(ImageData(img = R.drawable.ic_baseline_image_24))
             add(ImageData(img = R.drawable.ic_baseline_info_24))
             add(ImageData(img = R.mipmap.test))
+            add(ImageData(img = R.mipmap.test))
+            add(ImageData(img = R.mipmap.test))
+            add(ImageData(img = R.mipmap.test))
+            add(ImageData(img = R.mipmap.test))
+            add(ImageData(img = R.mipmap.test))
+            add(ImageData(img = R.mipmap.test))
+            add(ImageData(img = R.mipmap.test))
+            add(ImageData(img = R.mipmap.test))
+            add(ImageData(img = R.mipmap.test))
+            add(ImageData(img = R.mipmap.test))
+            add(ImageData(img = R.mipmap.test))
+            add(ImageData(img = R.mipmap.test))
+            add(ImageData(img = R.mipmap.test))
+            add(ImageData(img = R.mipmap.test))
+            add(ImageData(img = R.mipmap.test))
+            add(ImageData(img = R.mipmap.test))
+            add(ImageData(img = R.mipmap.test))
+            add(ImageData(img = R.mipmap.test))
+            add(ImageData(img = R.mipmap.test))
+            add(ImageData(img = R.mipmap.test))
+            add(ImageData(img = R.mipmap.test23))
+
 
             imageAdapter.datas = datas
             imageAdapter.notifyDataSetChanged()
