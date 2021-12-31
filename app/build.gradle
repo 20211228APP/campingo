@@ -1,7 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
-    id "com.android.asset-pack"
+//    id "com.android.asset-pack"
 }
 
 android {
@@ -60,7 +60,6 @@ dependencies {
 }
 
 
-dependencies {
 
 sourceSets{
     main{

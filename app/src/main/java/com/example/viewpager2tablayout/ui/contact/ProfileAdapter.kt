@@ -1,25 +1,17 @@
-package com.example.viewpager2tablayout
+package com.example.viewpager2tablayout.ui.contact
 
-import android.content.Intent
-import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import android.widget.Toast
-import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
+import com.example.viewpager2tablayout.R
 
-class MyRecyclerViewAdapter(private val dataset: ArrayList<ContactProfileItem>) :
-    RecyclerView.Adapter<MyRecyclerViewAdapter.MyViewHolder>() {
-
-//    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
-//        val binding = ListItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-//        return MyViewHolder(binding)
-//    }
+class ProfileAdapter(private val dataset: ArrayList<ProfileItem>) :
+    RecyclerView.Adapter<ProfileAdapter.MyViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.list_item, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_profile, parent, false)
         return MyViewHolder(view)
     }
 

@@ -8,16 +8,16 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.viewpager2tablayout.ui.contact.ProfileItem
+import com.example.viewpager2tablayout.ui.contact.ProfileAdapter
 import com.example.viewpager2tablayout.databinding.FragmentContactBinding
-import com.google.gson.Gson
 import org.json.JSONObject
-import java.io.IOException
 
 //프레그먼트를 이용
 class ContactFragment : Fragment() {
 
     private var layoutManager: RecyclerView.LayoutManager? = null
-    private var adapter: MyRecyclerViewAdapter? = null
+    private var adapter: ProfileAdapter? = null
 
     private var _binding: FragmentContactBinding? = null
     private val binding get() = _binding!!
@@ -32,7 +32,7 @@ class ContactFragment : Fragment() {
         val inputStream = assetManager.open("ContactData.json")
         val jsonString = inputStream.bufferedReader().use { it.readText() }
 
-        var result: ArrayList<ContactProfileItem> = arrayListOf()
+        var result: ArrayList<ProfileItem> = arrayListOf()
         val jObject = JSONObject(jsonString)
         val jArray = jObject.getJSONArray("ContactData")
 
@@ -41,12 +41,12 @@ class ContactFragment : Fragment() {
             val name = obj.getString("NAME")
             val age = obj.getString("AGE")
             val call = obj.getString("CALL")
-            result.add(ContactProfileItem(name, age, call))
+            result.add(ProfileItem(name, age, call))
         }
 
         binding.recyclerView.apply {
             layoutManager = LinearLayoutManager(this.context, LinearLayoutManager.VERTICAL, false)
-            adapter = MyRecyclerViewAdapter(result)
+            adapter = ProfileAdapter(result)
         }
 
         return binding.root
