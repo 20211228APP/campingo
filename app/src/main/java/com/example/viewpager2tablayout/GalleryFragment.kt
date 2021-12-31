@@ -6,27 +6,19 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.example.viewpager2tablayout.databinding.FragmentGalleryBinding
 
 class GalleryFragment : Fragment() {
-    // TODO: Rename and change types of parameters
     lateinit var imageAdapter: ImageAdapter
     val datas = mutableListOf<ImageData>()
 
     private var _binding: FragmentGalleryBinding? = null
     private val binding get() = _binding!!
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         _binding = FragmentGalleryBinding.inflate(inflater, container, false)
 
         initRecycler()
@@ -36,16 +28,6 @@ class GalleryFragment : Fragment() {
     override fun onDestroyView() {
         _binding = null
         super.onDestroyView()
-    }
-
-
-    companion object {
-        @JvmStatic
-        fun newInstance() =
-            GalleryFragment().apply {
-                initRecycler()
-            }
-
     }
 
     private fun initRecycler() {

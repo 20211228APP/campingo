@@ -18,7 +18,7 @@ class MyPagerAdapter(fa: FragmentActivity) : FragmentStateAdapter(fa) {
                 GalleryFragment()
             }
             else -> {
-                MyFragment.newInstance("Page3", "")
+                CalendarFragment()
             }
         }
     }
