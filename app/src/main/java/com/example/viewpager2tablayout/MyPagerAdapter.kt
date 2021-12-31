@@ -1,8 +1,10 @@
 package com.example.viewpager2tablayout
 
+import android.net.wifi.p2p.nsd.WifiP2pUpnpServiceInfo.newInstance
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
+import java.lang.reflect.Array.newInstance
 
 class MyPagerAdapter(fa: FragmentActivity) : FragmentStateAdapter(fa) {
     private val NUM_PAGES = 3
@@ -11,9 +13,7 @@ class MyPagerAdapter(fa: FragmentActivity) : FragmentStateAdapter(fa) {
 
     override fun createFragment(position: Int): Fragment {
         return when (position) {
-            0 -> {
-                MyFragment.newInstance("CONTACT", "")
-            }
+            0 -> ContactFragment()
             1 -> {
                 GalleryFragment()
             }

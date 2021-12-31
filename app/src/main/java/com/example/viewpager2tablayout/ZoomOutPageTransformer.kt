@@ -6,6 +6,7 @@ import androidx.viewpager2.widget.ViewPager2
 private const val MIN_SCALE = 0.85f
 private const val MIN_ALPHA = 0.5f
 
+//뷰페이저2 화면 전환
 class ZoomOutPageTransformer : ViewPager2.PageTransformer {  //페이지 넘기는 효과, 구글에서 제공
 
     override fun transformPage(view: View, position: Float) {
