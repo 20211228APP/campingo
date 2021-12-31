@@ -1,4 +1,3 @@
-
 package com.example.viewpager2tablayout
 
 import android.os.Bundle

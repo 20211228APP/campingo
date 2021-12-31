@@ -1,8 +1,11 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
-//    id "com.android.asset-pack"
+//    id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
 }
+
+def Properties properties = new Properties()
+properties.load(project.rootProject.file('local.properties').newDataInputStream())
 
 android {
     compileSdkVersion 30
@@ -17,6 +20,7 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+//        buildConfigfield "String", "MAPSs_API_KEY", properties['MAPS_API_KEY']
     }
 
     buildTypes {
@@ -54,6 +58,10 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.8.6'//추가
     implementation 'androidx.cardview:cardview:1.0.0'//추가
     implementation "com.airbnb.android:lottie:3.6.1"//추가
+    //Map
+    implementation 'com.google.android.gms:play-services-maps:18.0.1'
+    implementation 'com.google.android.gms:play-services-location:19.0.0'
+
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
