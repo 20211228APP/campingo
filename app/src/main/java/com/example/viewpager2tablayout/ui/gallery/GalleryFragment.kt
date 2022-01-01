@@ -1,6 +1,7 @@
 package com.example.viewpager2tablayout
 
 import android.os.Bundle
+import android.util.TypedValue
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,6 +10,7 @@ import androidx.recyclerview.widget.GridLayoutManager
 import com.example.viewpager2tablayout.ui.gallery.ImageAdapter
 import com.example.viewpager2tablayout.ui.gallery.ImageItem
 import com.example.viewpager2tablayout.databinding.FragmentGalleryBinding
+import com.example.viewpager2tablayout.ui.gallery.GalleryGridDecoration
 
 class GalleryFragment : Fragment() {
     lateinit var imageAdapter: ImageAdapter
@@ -35,6 +37,7 @@ class GalleryFragment : Fragment() {
     private fun initRecycler() {
         imageAdapter = ImageAdapter()
         binding.rvGallery.adapter = imageAdapter
+        binding.rvGallery.addItemDecoration(GalleryGridDecoration(dpToPx(this, 1f)))
         binding.rvGallery.layoutManager = GridLayoutManager(this.context, 3)
 
         datas.apply {
@@ -63,6 +66,10 @@ class GalleryFragment : Fragment() {
             imageAdapter.datas = datas
             imageAdapter.notifyDataSetChanged()
         }
+    }
+
+    fun dpToPx(context: GalleryFragment, dp: Float): Float {
+        return TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp, context.resources.displayMetrics)
     }
 }
 
