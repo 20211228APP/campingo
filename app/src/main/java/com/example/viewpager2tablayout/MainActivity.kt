@@ -11,6 +11,7 @@ import com.example.viewpager2tablayout.databinding.ActivityMainBinding
 import com.google.android.material.tabs.TabLayoutMediator
 
 class MainActivity : AppCompatActivity() {
+
     private lateinit var binding: ActivityMainBinding
     private val tabIcon = listOf(
         R.drawable.ic_baseline_contact_phone_24,
