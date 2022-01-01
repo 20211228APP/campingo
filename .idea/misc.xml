@@ -3,26 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.23645833333333333" />
         <entry key="..\:/GitHub/madcamp1st/app/src/main/res/layout/activity_contact.xml" value="0.21302083333333333" />
         <entry key="..\:/GitHub/madcamp1st/app/src/main/res/layout/activity_main.xml" value="0.29981884057971014" />
-        <entry key="..\:/GitHub/madcamp1st/app/src/main/res/layout/activity_map.xml" value="0.24947916666666667" />
         <entry key="..\:/GitHub/madcamp1st/app/src/main/res/layout/activity_splash.xml" value="0.22760416666666666" />
         <entry key="..\:/GitHub/madcamp1st/app/src/main/res/layout/card_layout.xml" value="0.23802083333333332" />
         <entry key="..\:/GitHub/madcamp1st/app/src/main/res/layout/card_view.xml" value="0.1" />
         <entry key="..\:/GitHub/madcamp1st/app/src/main/res/layout/cardview.xml" value="0.23802083333333332" />
         <entry key="..\:/GitHub/madcamp1st/app/src/main/res/layout/fragment_contact.xml" value="0.1" />
         <entry key="..\:/GitHub/madcamp1st/app/src/main/res/layout/fragment_gallery.xml" value="0.10960144927536232" />
-        <entry key="..\:/GitHub/madcamp1st/app/src/main/res/layout/fragment_map.xml" value="0.21302083333333333" />
         <entry key="..\:/GitHub/madcamp1st/app/src/main/res/layout/fragment_my.xml" value="0.2640625" />
-        <entry key="..\:/GitHub/madcamp1st/app/src/main/res/layout/item_image.xml" value="0.378125" />
-        <entry key="..\:/GitHub/madcamp1st/app/src/main/res/layout/item_profile.xml" value="0.378125" />
         <entry key="..\:/GitHub/madcamp1st/app/src/main/res/layout/list_item.xml" value="0.2640625" />
-        <entry key="..\:/GitHub/madcamp1st/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.39427083333333335" />
-        <entry key="..\:/GitHub/madcamp1st/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.39427083333333335" />
-      </map>
-    </option>
-  </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">
         <entry key="app/src/main/res/drawable/test_background.xml" value="0.22604166666666667" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.20989583333333334" />
         <entry key="app/src/main/res/layout/activity_map.xml" value="0.21197916666666666" />

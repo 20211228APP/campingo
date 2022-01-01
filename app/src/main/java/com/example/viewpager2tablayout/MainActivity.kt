@@ -28,6 +28,7 @@ class MainActivity : AppCompatActivity() {
         binding.viewpager.apply {
             adapter = TabAdapter(context as FragmentActivity)  //MyPagerAdapter 객체를 만들어서 Viewpager Adapter속성에 연결함
             setPageTransformer(ZoomOutPageTransformer()) //페이지 넘기는 효과 ZoomOut
+            isUserInputEnabled = false;
         }
 
         //TabLayout과 ViewPager2연결
