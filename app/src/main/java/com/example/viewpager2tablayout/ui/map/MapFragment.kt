@@ -8,10 +8,11 @@ import android.view.ViewGroup
 import com.google.android.gms.maps.*
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
+import com.google.android.gms.maps.CameraUpdateFactory
+import com.google.android.gms.maps.model.BitmapDescriptorFactory
+
 
 class MapFragment : Fragment(), OnMapReadyCallback {
-//    private lateinit var mapView: MapView
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
@@ -20,7 +21,7 @@ class MapFragment : Fragment(), OnMapReadyCallback {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        var rootView = inflater.inflate(R.layout.fragment_map, container, false)
+        val rootView = inflater.inflate(R.layout.fragment_map, container, false)
         setupMap()
         return rootView
     }
@@ -30,16 +31,15 @@ class MapFragment : Fragment(), OnMapReadyCallback {
     }
 
     override fun onMapReady(googleMap: GoogleMap) {
-        val seoul = LatLng(-37.813, 144.962)
-        googleMap.moveCamera(CameraUpdateFactory.newLatLng(seoul))
-        googleMap.moveCamera(CameraUpdateFactory.zoomTo(12f))
-
-        //마커 출력
-        val marker = MarkerOptions()
-            .position(seoul)
-            .title("Nowon")
-            .snippet("노원역입니다.")
-        googleMap?.addMarker(marker)
+        val sydney = LatLng(-33.852, 151.211)
+        googleMap.addMarker(
+            MarkerOptions()
+                .position(sydney)
+                .title("Marker in Sydney")
+                .icon(BitmapDescriptorFactory.fromAsset("faceMarker.ico"))
+        )
+        
+        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 15f))
     }
 
 }
