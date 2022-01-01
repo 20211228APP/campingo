@@ -38,7 +38,7 @@ class MapFragment : Fragment(), OnMapReadyCallback {
                 .title("Marker in Sydney")
                 .icon(BitmapDescriptorFactory.fromAsset("faceMarker.ico"))
         )
-        
+
         googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 15f))
     }
 
