@@ -39,9 +39,11 @@ class ContactFragment : Fragment() {
         for (i in 0 until jArray.length()) {
             val obj = jArray.getJSONObject(i)
             val name = obj.getString("NAME")
-            val age = obj.getString("AGE")
+            val location = obj.getString("Location")
             val call = obj.getString("CALL")
-            result.add(ProfileItem(name, age, call))
+            val latitude = obj.getDouble("latitude")
+            val longitude = obj.getDouble("longitude")
+            result.add(ProfileItem(name, location, call, latitude, longitude))
         }
 
         binding.recyclerView.apply {

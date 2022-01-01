@@ -20,7 +20,7 @@ class ProfileAdapter(private val dataset: ArrayList<ProfileItem>) :
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         holder.name.text = dataset.get(position).NAME
-        holder.age.text = dataset.get(position).AGE
+        holder.location.text = dataset.get(position).Location
         holder.call.text = dataset.get(position).CALL
 
 
@@ -33,7 +33,7 @@ class ProfileAdapter(private val dataset: ArrayList<ProfileItem>) :
 
     inner class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val name = itemView.findViewById<TextView>(R.id.tv_name)
-        val age = itemView.findViewById<TextView>(R.id.tv_age)
+        val location = itemView.findViewById<TextView>(R.id.tv_location)
         val call = itemView.findViewById<TextView>(R.id.tv_call)
 
         init {
