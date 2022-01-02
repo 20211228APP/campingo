@@ -23,6 +23,8 @@
         </activity>
         <!--로딩 화면을 위한 추가-->
 
+        <activity android:name=".ui.gallery.ShowActivity"/>
+
     </application>
 
 </manifest>
