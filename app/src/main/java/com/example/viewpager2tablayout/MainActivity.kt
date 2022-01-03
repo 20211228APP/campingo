@@ -14,9 +14,9 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
     private val tabIcon = listOf(
-        R.drawable.ic_baseline_contact_phone_24,
+        R.drawable.ic_contact,
         R.drawable.ic_baseline_image_24,
-        R.drawable.ic_baseline_location_on_24
+        R.drawable.ic_map
     )
 
 
