@@ -23,7 +23,10 @@ class ShowActivity : AppCompatActivity() {
     private fun setContentView() {
         val mAdapter = ShowAdapter(getImage(19))
         show_recycler.adapter = mAdapter
-        show_recycler.layoutManager = LinearLayoutManager(this)
+        show_recycler.layoutManager = LinearLayoutManager(this).also{
+            it.orientation = LinearLayoutManager.HORIZONTAL
+        }
+
 
         mAdapter.itemClick = object: ShowAdapter.ItemClick {
             override fun onClick(view: View, item: ImageItem) {
