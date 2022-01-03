@@ -34,9 +34,9 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:background="@color/white"
-            app:tabIndicatorColor="@color/design_default_color_primary"
-            app:tabRippleColor="@color/design_default_color_primary"
-            app:tabSelectedTextColor="@color/design_default_color_primary"
+            app:tabIndicatorColor="@color/falcon"
+            app:tabRippleColor="@color/falcon"
+            app:tabSelectedTextColor="@color/falcon"
             app:tabTextColor="@color/black" />
 
     </com.google.android.material.appbar.AppBarLayout>
