@@ -1,1 +1,1 @@
-# madcamp1st
+# campingo(캠핑고)
