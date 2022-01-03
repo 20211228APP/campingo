@@ -49,6 +49,10 @@
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
+        <!--로딩 화면을 위한 추가-->
+
+        <activity android:name=".ui.gallery.ShowActivity"/>
+
     </application>
 
 </manifest>
