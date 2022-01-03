@@ -15,8 +15,9 @@
         <entry key="..\:/GitHub/madcamp1st/app/src/main/res/layout/fragment_my.xml" value="0.2640625" />
         <entry key="..\:/GitHub/madcamp1st/app/src/main/res/layout/list_item.xml" value="0.2640625" />
         <entry key="app/src/main/res/drawable/test_background.xml" value="0.22604166666666667" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.20989583333333334" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_map.xml" value="0.21197916666666666" />
+        <entry key="app/src/main/res/layout/fragment_gallery.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_map.xml" value="0.1" />
         <entry key="app/src/main/res/layout/item_image.xml" value="0.1" />
         <entry key="app/src/main/res/layout/map_contact.xml" value="0.2418478260869565" />
