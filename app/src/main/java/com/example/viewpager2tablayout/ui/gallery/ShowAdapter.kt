@@ -9,7 +9,7 @@ import kotlinx.android.synthetic.main.gallery_show_item.view.*
 
 class ShowAdapter (private val ShowList: ArrayList<ImageItem>) :
     RecyclerView.Adapter<ShowAdapter.ShowViewHolder>(){
-    var datas = mutableListOf<ImageItem>()
+    //var datas = mutableListOf<ImageItem>()
 
     interface  ItemClick {
         fun onClick(view: View, item: ImageItem)
@@ -17,15 +17,15 @@ class ShowAdapter (private val ShowList: ArrayList<ImageItem>) :
     var itemClick: ItemClick? = null
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ShowViewHolder {
-        val itemView = LayoutInflater.from(parent.context).inflate(
-            R.layout.gallery_show_item,
-            parent, false
-        )
+        val itemView = LayoutInflater.from(parent.context).inflate(R.layout.gallery_show_item,
+            parent, false)
         return ShowViewHolder(itemView)
     }
 
     override fun onBindViewHolder(holder: ShowViewHolder, position: Int) {
-        val currentItem = datas[position]
+        //val currentItem = datas[position]
+
+        val currentItem = ShowList[position]
 
         val listener = View.OnClickListener {
 
@@ -42,7 +42,8 @@ class ShowAdapter (private val ShowList: ArrayList<ImageItem>) :
         }
     }
 
-    override fun getItemCount() = datas.size
+    //override fun getItemCount() = datas.size
+    override fun getItemCount() = ShowList.size
 
     class ShowViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun setItem(listener: View.OnClickListener, item: ImageItem) {

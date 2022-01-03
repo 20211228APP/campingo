@@ -55,7 +55,7 @@ class ShowActivity : AppCompatActivity() {
                 18 -> R.drawable.test18
                 else -> R.drawable.test19
             }
-            val item = ImageItem(i)
+            val item = ImageItem(drawable)
             list += item
         }
         return list
