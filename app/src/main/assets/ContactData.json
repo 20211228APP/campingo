@@ -2,73 +2,108 @@
   "ContactData": [
     {
       "NAME": "가리산자연휴양림",
-      "Location": "강원도 홍천",
+      "Location": "강원도 홍천군",
       "CALL": "033-435-6034",
       "latitude": "37.865122",
       "longitude": "127.9839063"
     },
     {
       "NAME": "강변야영장",
-      "Location": "강원도 인제",
+      "Location": "강원도 인제군",
       "CALL": "010-8970-0437",
       "latitude": "38.1927024",
       "longitude": "128.3279648"
     },
     {
       "NAME": "강원도힐링캠핑장",
-      "Location": "강원도 원주",
+      "Location": "강원도 원주시",
       "CALL": "0504-2016-0394",
       "latitude": "37.245979",
       "longitude": "128.157204"
     },
     {
       "NAME": "개미들솔향기야영장",
-      "Location": "강원도 정선",
+      "Location": "강원도 정선군",
       "CALL": "010-9591-1641",
       "latitude": "37.3191264",
       "longitude": "128.6927604"
     },
     {
       "NAME": "고길동 캠핑장",
-      "Location": "강원도 홍천",
+      "Location": "강원도 홍천군",
       "CALL": "010-9403-7603",
       "latitude": "37.8276478",
       "longitude": "127.833961"
     },
     {
       "NAME": "공주산림휴양마을",
-      "Location": "충남 공주",
+      "Location": "충남 공주시",
       "CALL": "041-855-0855",
       "latitude": "36.4227364",
       "longitude": "127.1201901"
     },
     {
       "NAME": "괴강국민여가캠핑장",
-      "Location": "충북 괴산",
+      "Location": "충북 괴산군",
       "CALL": "010-8648-2901",
       "latitude": "36.8080239",
       "longitude": "127.824917"
     },
     {
       "NAME": "국토정중앙천문대야영장",
-      "Location": "강원도 양구",
+      "Location": "강원도 양구군",
       "CALL": "033-480-2586",
       "latitude": "38.068868",
       "longitude": "128.0298507"
     },
     {
       "NAME": "그루터기캠핑장 ",
-      "Location": "강원도 양양",
+      "Location": "강원도 양양군",
       "CALL": "0504-2016-1864",
       "latitude": "37.9554535",
       "longitude": "128.508799"
     },
     {
       "NAME": "글램바오캠핑장",
-      "Location": "경기도 가평",
+      "Location": "경기도 가평시",
       "CALL": "031-582-3824",
       "latitude": "37.7728076",
       "longitude": "127.5357133"
+    },
+    {
+      "NAME": "양촌여울체험캠프",
+      "Location": "경남 창원시",
+      "CALL": "055-271-2012",
+      "latitude": "35.1365006",
+      "longitude": "128.3753007"
+    },
+    {
+      "NAME": "80 SS 오토캠핑장",
+      "Location": "경북 군위군",
+      "CALL": "054-762-1568",
+      "latitude": "36.0300417",
+      "longitude": "128.6304762"
+    },
+    {
+      "NAME": "The Star 오토캠핑장",
+      "Location": "전남 여수시",
+      "CALL": "061-641-1490",
+      "latitude": "34.718507",
+      "longitude": "127.781276"
+    },
+    {
+      "NAME": "VIP오토캠핑장",
+      "Location": "경남 밀양시",
+      "CALL": "010-3878-2927",
+      "latitude": "35.4972561",
+      "longitude": "128.9267335"
+    },
+    {
+      "NAME": "씨스테이 야영장",
+      "Location": "인천광역시",
+      "CALL": "010-8603-5554",
+      "latitude": "37.2801027",
+      "longitude": "126.4683211"
     }
   ]
 }
