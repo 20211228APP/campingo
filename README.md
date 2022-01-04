@@ -3,7 +3,7 @@
 
 <img src = "https://user-images.githubusercontent.com/50014431/148011124-ad67320b-d282-41ca-8e37-c29d122cfa4c.gif" width="200" height="400"/>
 
-("app/release/app-release.apk" 를 통해 앱을 설치할 수 있습니다.)
+(campingo.apk 를 통해 앱을 설치할 수 있습니다)
 
 ## TAB 1 - CONTACT
 캠핑장이름, 위치, 전화번호 프로필이 담긴 탭
