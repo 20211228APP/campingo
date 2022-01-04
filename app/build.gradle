@@ -29,6 +29,10 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            resValue "string", "google_maps_api", "AIzaSyD9fQL_roVSVO2xmJ-rWLwwWERjVd0pRsU"
+        }
+        debug {
+            resValue "string", "google_maps_api", "AIzaSyD9fQL_roVSVO2xmJ-rWLwwWERjVd0pRsU"
         }
     }
     compileOptions {
